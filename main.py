@@ -2,7 +2,7 @@ from databases.sql_lite import SqlLiteDatabase
 from repositories.productRepository import ProductRepositorySqlLite
 from controllers import ProductController
 
-sqlLiteDatabase = SqlLiteDatabase("products")
+sqlLiteDatabase = SqlLiteDatabase()
 productRepository = ProductRepositorySqlLite(sqlLiteDatabase)
 productController = ProductController(productRepository)
 
